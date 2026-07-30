@@ -12,10 +12,10 @@
   <header>
     <div class="heading">
       <div>
-        <h2><img src="images/logo-small.svg"> Typing Speed Test</h2>
+        <h1><img src="images/logo-small.svg"> Typing Speed Test</h1>
         <p>Type as fast as you can in 60 seconds</p>
       </div>
-      <div class="best-score"><img src="images/icon-personal-best.svg"> Personal best:<span> __WPM</span> <!-- PB --></div>
+      <div class="best-score"><img src="images/icon-personal-best.svg" alt="logo"> Personal best:<span> __WPM</span> <!-- PB --></div>
     </div>
 
     <nav class="nav-bar">
@@ -28,14 +28,14 @@
       <div class="options">
         <div class="Difficulty">
           Difficulty:
-          <button id="Easy">Easy</button>
-          <button id="Medium">Medium</button>
-          <button id="Hard">Hard</button>
+          <button id="Easy" type="submit">Easy</button>
+          <button id="Medium" type="submit">Medium</button>
+          <button id="Hard" type="submit">Hard</button>
         </div>
         <div class="Mode">
           Mode:
-          <button id="Timed">Timed (60s)</button>
-          <button id="Passage">Passage</button>
+          <button id="Timed" type="submit">Timed (60s)</button>
+          <button id="Passage" type="submit">Passage</button>
         </div>
       </div>
       
@@ -58,12 +58,12 @@
     <!-- Passage -->
     <div id="passage-container" class="passage-box"></div>
     <div id="Reset-btn-container">
-      <button id="Reset-btn">Reset test<img src="images/icon-restart.svg" alt=""></button>
+      <button id="Reset-btn" type="submit">Reset test<img src="images/icon-restart.svg" alt=""></button>
     </div>
 
     <div id="start" class="start-part">
       <div class="start-content ">
-        <button class="start-btn">Start Typing Test</button>
+        <button class="start-btn" type="submit">Start Typing Test</button>
         <p>Chose the options to start the test</p>
       </div>
     </div>
@@ -71,27 +71,27 @@
     <!-- Test Complete Start  -->
     <div class="complete hide" id="completed">
       <img src="images/icon-completed.svg">
-      <h1>Test Complete!</h1>
+      <h2>Test Complete!</h2>
       <p id="complete-message">Solid run. Keep pushing to beat your high score.</p>
       <div class="Box-score">
         <span class="score-box">WPM:<h2 id="score-box-WPM">85</h2><!-- WPM --></span>
         <span class="score-box">Accuracy:<h2 id="score-box-accuracy">90%</h2> <!-- Accuracy --></span>
         <span class="score-box">Characters:<h2 id="score-box-char">0/</h2> <!-- Correct/Incorrect --></span>
       </div>
-      <button id="again-btn" class="Again-Btn" >Go Again <img src="images/icon-restart.svg" alt=""></button> 
+      <button id="again-btn" class="Again-Btn" type="submit">Go Again <img src="images/icon-restart.svg" alt=""></button> 
     </div> 
     <!-- Test Complete End -->
     
     <div class="High-Score hide">
       <img src="images/icon-new-pb.svg">
-      <h1>High Score Smashed!</h1>
+      <h2>High Score Smashed!</h2>
       <p>You're getting faster.That was incredible typing.</p>
       <div class="High-Score-Box">
-        <span class="box">WPM:<h2 id="score-box-WPM">95</h2><!-- WPM --></span>
+        <span class="box">WPM:<h2 id="box-WPM">95</h2><!-- WPM --></span>
         <span class="box">Accuracy:<h2 id="box-accuracy">100%</h2> <!-- Accuracy --></span>
         <span class="box">Characters:<h2 id="box-char">120/5</h2> <!-- Correct/Incorrect --></span>
       </div>
-      <button id="Beat-btn" >Beat This Score <img src="images/icon-restart.svg" alt=""></button>
+      <button id="Beat-btn" type="submit">Beat This Score <img src="images/icon-restart.svg" alt=""></button>
       <img src="images/pattern-confetti.svg">
     </div>
     
